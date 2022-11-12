@@ -1,0 +1,152 @@
+.why-us {
+  display: flex;
+  /* height: calc(100vh - 98px); */
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.why-us h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 30px auto;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+.table-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 70vw;
+}
+
+.table-container th {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #312e33;
+}
+
+.table-container th:last-child {
+  background-color: #d761a9;
+  color: #ffffff;
+  border-radius: 20px 20px 0 0;
+}
+
+.table-container td:last-child {
+  background-color: #d761a9;
+}
+.table-container td {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  width: 260px;
+}
+
+.table-container td:first-child,
+.table-container th:first-child {
+  width: 380px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.table-container tr {
+  height: 70px;
+}
+
+.table-container tr:last-child td:last-child {
+  border-radius: 0 0 20px 20px;
+}
+
+tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.table-container th,
+.table-container td {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.table-container tr:last-child,
+.table-container td:last-child,
+.table-container td:nth-child(3),
+.table-container th:last-child,
+.table-container th:nth-child(3) {
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .table-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .why-us h1 {
+    font-size: 36px;
+    margin: 50px auto;
+  }
+  .table-container {
+    width: 99%;
+  }
+
+  .table-container th {
+    font-size: 22px;
+  }
+
+  .table-container td {
+    font-size: 18px;
+  }
+
+  .table-container tr {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .table-container th {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .table-container td:first-child,
+  .table-container th:first-child {
+    width: 280px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .table-container td {
+    font-size: 16px;
+  }
+
+  .table-container tr {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .table-container td:first-child,
+  .table-container th:first-child {
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
